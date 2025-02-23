@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "179434901326",
+    "project_id": "sem3project-a524a",
+    "storage_bucket": "sem3project-a524a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179434901326:android:fdb471f3c8afdfe58c981f",
+        "android_client_info": {
+          "package_name": "com.example.sem3project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiDwriKqM_OpmYBCBeYGsxDTmPdz5s_2M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
