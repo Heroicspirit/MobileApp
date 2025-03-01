@@ -45,13 +45,14 @@ class RegistrationActivity : AppCompatActivity() {
 
 
 
+
             userViewModel.signup(email, password) {
                     success, message, userId ->
                 if (success) {
                     var userModel = UserModel(
                         userId.toString(), firstName,
-                        lastName, address,
-                        phone, email
+                        lastName,address,phone,
+                         email
                     )
                     userViewModel.addUserToDatabase(userId,userModel){
                             success,message->
@@ -112,7 +113,7 @@ class RegistrationActivity : AppCompatActivity() {
 //                    } else {
 //                        Toast.makeText(
 //                            this@RegistrationActivity,
-//                            it.exception?.message, Toast.LENGTH_LONG
+///                            it.exception?.message, Toast.LENGTH_LONG
 //                        ).show()
 //                    }
 //                }

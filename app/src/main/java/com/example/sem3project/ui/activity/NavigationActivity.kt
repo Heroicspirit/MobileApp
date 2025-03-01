@@ -8,9 +8,11 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
+import com.example.sem3project.HomeFragment
 import com.example.sem3project.R
 import com.example.sem3project.databinding.ActivityNavigationBinding
-import com.example.sem3project.fragment.HomeFragment
+
+import com.example.sem3project.fragment.NotesFragment
 import com.example.sem3project.fragment.ProfileFragment
 
 class NavigationActivity : AppCompatActivity() {
@@ -31,16 +33,18 @@ class NavigationActivity : AppCompatActivity() {
 
         setContentView(navigationBinding.root)
 
-        replaceFragment(HomeFragment())
+        replaceFragment(HomeFragment()) // Default fragment
+
         navigationBinding.buttomNavigation.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.menuHome -> replaceFragment(HomeFragment())
-//                R.id.menuCart -> replaceFragment(CartFragment())
+                R.id.menuNotes -> replaceFragment(NotesFragment()) // Add t
                 R.id.menuProfile -> replaceFragment(ProfileFragment())
                 else -> {}
             }
             true
         }
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, 0)

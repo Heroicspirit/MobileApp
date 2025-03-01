@@ -30,6 +30,8 @@ interface UserRepository {
     fun forgetPassword(email:String,
                        callback: (Boolean, String) -> Unit)
 
+
+
     fun getCurrentUser() : FirebaseUser?
 
 

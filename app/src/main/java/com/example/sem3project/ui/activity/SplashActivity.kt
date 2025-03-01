@@ -14,7 +14,7 @@ import com.example.sem3project.R
 class SplashActivity : AppCompatActivity() {
 
     companion object {
-        private const val SPLASH_DELAY = 1500L // 1.5 seconds
+        private const val SPLASH_DELAY = 2000L // 2 seconds
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,10 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.HomeFragment">
+    android:orientation="vertical"
+    android:padding="16dp">
 
+    <EditText
+        android:id="@+id/editAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Appointment"
+        android:padding="10dp"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/btnSaveAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Appointment"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/editAppointmentId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Appointment ID to update"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/btnUpdateAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Appointment"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/editAppointmentIdToDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Appointment ID to delete"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/btnDeleteAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Appointment"
+        android:layout_marginTop="10dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/appointmentRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"/>
 </LinearLayout>
